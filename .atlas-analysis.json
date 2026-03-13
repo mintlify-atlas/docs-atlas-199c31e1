@@ -1,0 +1,141 @@
+{
+  "projectType": "infrastructure",
+  "projectName": "Syntalix-Orion",
+  "projectDescription": "Infrastructure as Code platform for automated Docker Swarm deployment with Ansible and Python",
+  "theme": "aspen",
+  "primaryColor": "#94cb04",
+  "lightColor": "#545454",
+  "darkColor": null,
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "requirements"
+            ]
+          },
+          {
+            "group": "Setup & Installation",
+            "pages": [
+              "installation/setup",
+              "installation/verification",
+              "installation/configuration"
+            ]
+          },
+          {
+            "group": "Architecture",
+            "pages": [
+              "architecture/overview",
+              "architecture/components",
+              "architecture/security",
+              "architecture/network"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/swarm-init",
+              "deployment/traefik",
+              "deployment/portainer",
+              "deployment/applications"
+            ]
+          },
+          {
+            "group": "Application Management",
+            "pages": [
+              "apps/service-registry",
+              "apps/wizard",
+              "apps/custom-stacks",
+              "apps/templates"
+            ]
+          },
+          {
+            "group": "Operations",
+            "pages": [
+              "operations/maintenance",
+              "operations/scaling",
+              "operations/monitoring",
+              "operations/backup"
+            ]
+          },
+          {
+            "group": "Security",
+            "pages": [
+              "security/hardening",
+              "security/secrets",
+              "security/firewall",
+              "security/tls"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "pages": [
+              "troubleshooting/common-issues",
+              "troubleshooting/networking",
+              "troubleshooting/swarm",
+              "troubleshooting/debugging"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Reference",
+        "groups": [
+          {
+            "group": "Ansible Roles",
+            "pages": [
+              "reference/roles/common",
+              "reference/roles/docker",
+              "reference/roles/desplegador"
+            ]
+          },
+          {
+            "group": "Python Scripts",
+            "pages": [
+              "reference/scripts/main",
+              "reference/scripts/registry",
+              "reference/scripts/config",
+              "reference/scripts/templating"
+            ]
+          },
+          {
+            "group": "Configuration Files",
+            "pages": [
+              "reference/config/playbook",
+              "reference/config/inventory",
+              "reference/config/manifest",
+              "reference/config/stack-templates"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Automated Docker Swarm cluster initialization",
+    "Idempotent Ansible playbooks for reproducible infrastructure",
+    "Python-based service registry with interactive wizard",
+    "Traefik reverse proxy with dynamic routing and TLS",
+    "Portainer for visual container management",
+    "Modular service templates with Jinja2",
+    "Security-first design with overlay networks",
+    "Multi-node cluster support with horizontal scaling"
+  ],
+  "publicApiSurface": [
+    "setup.sh - Master bootstrap script",
+    "playbook.yml - Main Ansible orchestrator",
+    "Orion-Python-Ansible/scripts/main.py - Interactive service installer",
+    "ServiceRegistry.scan_registry() - Service discovery",
+    "ServiceRegistry.get_services_by_category() - Category-based service listing",
+    "ConfigManager.load_variables() - Configuration management",
+    "TemplateManager.render_template() - Jinja2 template rendering",
+    "Ansible role: common - System preparation",
+    "Ansible role: docker - Docker Engine and Swarm setup",
+    "Ansible role: desplegador_aplicaciones - Application deployment"
+  ]
+}
